@@ -20,7 +20,6 @@ img {
 }
 
 * {
-  line-height: 1.7;
   font-family: "Shippori Mincho", serif;
 }
 
@@ -36,11 +35,11 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
-  z-index: 99;
+  color: white;
+  z-index: 10;
 }
 
-.header__logo {
+.header_logo {
   margin-right: 100px;
   font-size: 30px;
   line-height: 70px;
@@ -51,13 +50,13 @@ a {
   display: inline-block;
 }
 
-.header-nav__ul {
+.header-nav_ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.header-nav__list {
+.header-nav_list {
   line-height: 70px;
   margin-right: 40px;
 }
@@ -76,16 +75,16 @@ a {
   }
 }
 
-.firstview__content {
+.firstview_content {
   position: absolute;
   top: 50%;
   left: 10%;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
-@media (max-width: 480px) {
-  .firstview__content {
+@media (max-width: 400px) {
+  .firstview_content {
     left: 50%;
     width: 90%;
     -webkit-transform: translate(-50%, -50%);
@@ -93,19 +92,13 @@ a {
   }
 }
 
-.firstview__catchcopy {
+.firstview_catchcopy {
   font-size: 60px;
 }
 
-.firstview__ss-txt {
-  font-size: 22px;
-}
-
-.hamburger {
-  position: absolute;
-  top: 12px;
-  right: 40px;
-  z-index: 98;
+.firstview_txt {
+  font-size: 20px;
+  padding-top: 30px;
 }
 
 .topics {
@@ -122,52 +115,51 @@ a {
           align-items: inherit;
 }
 
-.topics__item {
+.topics_item {
   width: 33.3333%;
   position: relative;
   display: block;
 }
 
-@media (max-width: 480px) {
-  .topics__item {
+@media (max-width: 400px) {
+  .topics_item {
     width: 100%;
   }
 }
 
-.topics__item-content {
+.topics_item-content {
   position: absolute;
   bottom: 0;
-  color: #fff;
+  color: white;
   padding: 20px;
 }
 
-.topics__item-ttl {
-  font-size: 26px;
-  font-weight: 700;
+.topics_item-ttl {
+  font-size: 25px;
+  font-weight: 700px;
   margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
-  .topics__item-ttl {
+  .topics_item-ttl {
     font-size: 20px;
   }
 }
 
 .styles {
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#fff));
-  background: linear-gradient(#000, #fff);
+  background: gray;
   padding: 60px 0;
 }
 
-.styles__ttl {
+.styles-ttl {
   font-size: 40px;
-  color: #fff;
+  color: black;
   max-width: 1000px;
   margin: 0 auto 40px;
   width: 90%;
 }
 
-.styles__wrap {
+.styles-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,23 +176,23 @@ a {
   width: 90%;
 }
 
-.styles__wrap-item {
+.styles-wrap_item {
   width: 30%;
   margin-bottom: 30px;
 }
 
 @media (max-width: 768px) {
-  .styles__wrap-item {
+  .styles-wrap_item {
     width: 49%;
   }
 }
 
 .about {
   padding: 60px 0;
-  background: #000;
+  background: black;
 }
 
-.about__inner {
+.about_inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -217,67 +209,74 @@ a {
   width: 90%;
 }
 
-.about__img {
+.about_img {
   width: 40%;
 }
 
-@media (max-width: 480px) {
-  .about__img {
+@media (max-width: 400px) {
+  .about_img {
     width: 100%;
   }
 }
 
-.about__content {
+.about_content {
   width: 50%;
-  color: #fff;
+  color: white;
 }
 
 @media (max-width: 768px) {
-  .about__content {
-    width: 58%;
+  .about_content {
+    width: 60%;
   }
 }
 
-@media (max-width: 480px) {
-  .about__content {
+@media (max-width: 400px) {
+  .about_content {
     width: 100%;
     margin-top: 40px;
     text-align: center;
   }
 }
 
-.about__content-ttl {
+.about_content-ttl {
   font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 40px;
+  font-weight: 700px;
+  margin: 20px 0 40px 0;
 }
 
-.about__content-subttl {
+.about_content-subttl {
   font-size: 24px;
 }
 
-.about__content-newline {
+.about_content-new {
   margin-bottom: 20px;
   display: block;
 }
 
-.about__content-txt {
+.about_content-txt {
   margin-bottom: 25px;
 }
 
 .about-btn {
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 15px 40px;
+  border: 3px solid white;
+  color: white;
+  padding: 20px 35px;
   display: inline-block;
 }
 
-.footer {
-  background: #000;
-  color: #fff;
+.about-btn:hover {
+  color: black;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.footer__copyright {
+.footer {
+  background: black;
+  color: white;
+}
+
+.footer_copyright {
   height: 70px;
   line-height: 70px;
   text-align: center;
